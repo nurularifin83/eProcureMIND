@@ -1,0 +1,29 @@
+{
+  "cookies": [
+    {
+      "name": "procsi_mind_id_development_session",
+      "value": "eyJpdiI6IlpLWXMrUVRmZndYb0pnUzFVcnI3b2c9PSIsInZhbHVlIjoiVWltN1VCVitBL1p1dTFQdTBXOU9wUTd6Z2ErU3ZXbWVRaGQvcmpuMDJ3bVlzTE44MkZRR3p4dW9KOVp0UEh6MmdVSlFEZG80M1N1dDBFRDBIM29IWTJvZGIxQlkwZ3R4QXBQcVlpR0thVjJIclU3MkQvUGxxY1QwVUxhdlU3TGEiLCJtYWMiOiJkMzFmOWI2ZGNmMWUzNmM2M2EwYjZhYzEwYWMwNTg0YjE2NDliZWQ2YjI4ZjliNWQxZmNiZjUwN2I3ZDEzYTFhIiwidGFnIjoiIn0%3D",
+      "domain": "procsi-mind-id.ptsisi.id",
+      "path": "/",
+      "expires": 1781191483.472532,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://procsi-mind-id.ptsisi.id",
+      "localStorage": [
+        {
+          "name": "i18nextLng",
+          "value": "en"
+        },
+        {
+          "name": "persist:root",
+          "value": "{\"auth\":\"{\\\"user\\\":null,\\\"token\\\":null,\\\"access\\\":\\\"NO\\\",\\\"invoice_popup\\\":false}\",\"toastr\":\"{\\\"toastrs\\\":[],\\\"confirm\\\":null}\",\"sidebarDt\":\"{\\\"sidebar\\\":[],\\\"location\\\":null,\\\"parent_access\\\":null,\\\"access\\\":null}\",\"notifications\":\"{\\\"data\\\":null}\",\"temporary\":\"{\\\"selected_items_pr\\\":[]}\",\"praQualification\":\"{\\\"tender_uuid\\\":null}\",\"tenderStatus\":\"{}\",\"invoiceStatus\":\"{}\",\"chat\":\"{\\\"unreadMsgVendor\\\":null,\\\"unreadMsgBuyer\\\":null,\\\"history_chat\\\":[]}\",\"typing\":\"{\\\"typing\\\":null}\",\"mappingIndexWorkflowApproval\":\"{\\\"status\\\":false,\\\"message\\\":\\\"\\\",\\\"error\\\":false,\\\"data\\\":[],\\\"meta\\\":{},\\\"loading\\\":false}\",\"_persist\":\"{\\\"version\\\":-1,\\\"rehydrated\\\":true}\"}"
+        }
+      ]
+    }
+  ]
+}
