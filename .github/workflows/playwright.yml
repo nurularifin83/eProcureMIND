@@ -27,9 +27,6 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      - name: Write auth.json
-        run: echo '${{ secrets.AUTH_COOKIES }}' > auth/admin.json
-
       - name: Run Playwright tests
         run: npx playwright test
         env:
