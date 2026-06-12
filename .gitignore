@@ -6,6 +6,6 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
-auth/admin.js
-# fixtures/users.ts
-.env
+auth/admin.json
+fixtures/users.ts
+/.env
