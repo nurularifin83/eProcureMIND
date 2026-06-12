@@ -27,8 +27,31 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
+      - name: Write auth.json
+        run: echo '${{ secrets.AUTH_COOKIES }}' > auth/admin.json
+
       - name: Run Playwright tests
         run: npx playwright test
+        env:
+          BASE_URL: ${{ secrets.BASE_URL }}
+          ADMIN_USERNAME: ${{ secrets.ADMIN_USERNAME }}
+          ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+          HSE_USERNAME: ${{ secrets.HSE_USERNAME }}
+          HSE_PASSWORD: ${{ secrets.HSE_PASSWORD }}
+          ADMIN_SCM_USERNAME: ${{ secrets.ADMIN_SCM_USERNAME }}
+          ADMIN_SCM_PASSWORD: ${{ secrets.ADMIN_SCM_PASSWORD }}
+          VML_USERNAME: ${{ secrets.VML_USERNAME }}
+          VML_PASSWORD: ${{ secrets.VML_PASSWORD }}
+          HEAD_SCM_USERNAME: ${{ secrets.HEAD_SCM_USERNAME }}
+          HEAD_SCM_PASSWORD: ${{ secrets.HEAD_SCM_PASSWORD }}
+          CREATOR_PROCPLAN_USERNAME: ${{ secrets.CREATOR_PROCPLAN_USERNAME }}
+          CREATOR_PROCPLAN_PASSWORD: ${{ secrets.CREATOR_PROCPLAN_PASSWORD }}
+          REQUESTER_PROCPLAN_USERNAME: ${{ secrets.REQUESTER_PROCPLAN_USERNAME }}
+          REQUESTER_PROCPLAN_PASSWORD: ${{ secrets.REQUESTER_PROCPLAN_PASSWORD }}
+          CONFIRMER_PROCPLAN_USERNAME: ${{ secrets.CONFIRMER_PROCPLAN_USERNAME }}
+          CONFIRMER_PROCPLAN_PASSWORD: ${{ secrets.CONFIRMER_PROCPLAN_PASSWORD }}
+          REVIEWER_PROCPLAN_USERNAME: ${{ secrets.REVIEWER_PROCPLAN_USERNAME }}
+          REVIEWER_PROCPLAN_PASSWORD: ${{ secrets.REVIEWER_PROCPLAN_PASSWORD }}
 
       - uses: actions/upload-artifact@v6
         if: always()

@@ -2,10 +2,10 @@
   "cookies": [
     {
       "name": "procsi_mind_id_development_session",
-      "value": "eyJpdiI6IlpLWXMrUVRmZndYb0pnUzFVcnI3b2c9PSIsInZhbHVlIjoiVWltN1VCVitBL1p1dTFQdTBXOU9wUTd6Z2ErU3ZXbWVRaGQvcmpuMDJ3bVlzTE44MkZRR3p4dW9KOVp0UEh6MmdVSlFEZG80M1N1dDBFRDBIM29IWTJvZGIxQlkwZ3R4QXBQcVlpR0thVjJIclU3MkQvUGxxY1QwVUxhdlU3TGEiLCJtYWMiOiJkMzFmOWI2ZGNmMWUzNmM2M2EwYjZhYzEwYWMwNTg0YjE2NDliZWQ2YjI4ZjliNWQxZmNiZjUwN2I3ZDEzYTFhIiwidGFnIjoiIn0%3D",
+      "value": "eyJpdiI6IkJPOXVYTTJnVEJ5MDc5eXByeEZGSnc9PSIsInZhbHVlIjoiNXhaV0lsN2I2YjhPdWo0aHU5YzB2VmtEUFk0c0pjYi8zY29aQ2tNYUdqZGczaXgxVGZFYjhXNFFXdkhwQTVpK2xqRHB0ZEtzdXNQa1I5OFN4Lyt3N2thWXkzcVRzeWpCd0NyTVhuU1QrQXlkdjRqcVcveEdYWDRMWnVJU0tYd20iLCJtYWMiOiIxZDBkYWEyM2NmZTcxNmVmMDI2YjFiNGRmMzgyN2UyMDVmYTE3NTYyM2Y1YWIxYjRiMTU4MzlkOGQxMjc3YTcwIiwidGFnIjoiIn0%3D",
       "domain": "procsi-mind-id.ptsisi.id",
       "path": "/",
-      "expires": 1781191483.472532,
+      "expires": 1781284270.437985,
       "httpOnly": true,
       "secure": false,
       "sameSite": "Lax"
