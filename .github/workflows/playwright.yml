@@ -59,18 +59,25 @@ jobs:
           REVIEWER_PROCPLAN_USERNAME: ${{ secrets.REVIEWER_PROCPLAN_USERNAME }}
           REVIEWER_PROCPLAN_PASSWORD: ${{ secrets.REVIEWER_PROCPLAN_PASSWORD }}
 
-      - uses: actions/upload-artifact@v6
+      - name: Keep artifact for debugging
+        uses: actions/upload-artifact@v6
         if: always()
         with:
           name: playwright-report
           path: playwright-report/
           retention-days: 30
 
+      - name: Generate Allure Report
+        run: npx allure generate allure-results --clean -o allure-report
+        if: always()
+
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v4
+        if: always()
         with:
-          path: playwright-report/
+          path: allure-report/
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+        if: always()
