@@ -72,6 +72,19 @@ jobs:
           EOF
         if: always()
 
+      - name: Set Allure Executor Info
+        run: |
+          cat > allure-results/executor.json << EOF
+          {
+            "name": "Nurul Arifin",
+            "type": "github",
+            "buildName": "Run #${{ github.run_number }}",
+            "buildUrl": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}",
+            "reportUrl": "https://nurularifin83.github.io/eProcureMIND/"
+          }
+          EOF
+        if: always()
+
       # 👇 STEP 2 - Download previous history for Trend chart
       - name: Download Previous Allure History
         uses: actions/download-artifact@v4
