@@ -148,3 +148,15 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v5
         if: github.ref == 'refs/heads/main'
+
+      - name: Slack Notification
+        uses: 8398a7/action-slack@v3
+        if: always()
+        with:
+          status: ${{ job.status }}
+          fields: repo,message,commit,author,action,eventName,ref,workflow
+          text: |
+            *Playwright Test Results*
+            Report: https://nurularifin83.github.io/eProcureMIND/
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
