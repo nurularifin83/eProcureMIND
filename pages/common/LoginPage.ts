@@ -29,7 +29,7 @@ export class LoginPage extends BasePage {
       page.getByRole('button', { name: 'Login' });
       
     this.loginFailedMessage =
-      page.getByText('Username or Password is wrong.');
+      page.getByText('Username or Password is wrong...');
 
     this.emptyUsernameMessage = 
       page.getByText('* The username field is required.');

@@ -96,6 +96,12 @@ jobs:
           if_no_artifact_found: warn
         continue-on-error: true
 
+      - name: Debug History
+        run: |
+          echo "=== allure-results/history contents ==="
+          ls -la allure-results/history || echo "folder is empty or not found"
+        if: always()
+
       - name: Install Allure CLI
         run: npm install -g allure-commandline
         if: always()
