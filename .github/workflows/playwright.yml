@@ -92,6 +92,7 @@ jobs:
         with:
           name: allure-history
           path: allure-results/history
+          github-token: ${{ secrets.GITHUB_TOKEN }}
         continue-on-error: true
 
       - name: Install Allure CLI
