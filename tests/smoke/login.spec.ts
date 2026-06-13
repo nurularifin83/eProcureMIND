@@ -2,8 +2,13 @@ import { test } from '@playwright/test';
 import { LoginPage } from '../../pages/common/LoginPage';
 import { DashboardPage } from '../../pages/common/DashboardPage';
 import { users } from '../../fixtures/users';
+import { label, epic, feature, story, severity } from 'allure-js-commons';
 
 test('Login as Admin', async ({ page }) => {
+  await epic('Authentication');
+  await feature('Login');
+  await story('Admin Login');
+  await severity('critical');
 
   const loginPage = new LoginPage(page);
   const dashboardPage = new DashboardPage(page);
