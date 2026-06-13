@@ -60,14 +60,15 @@ jobs:
           REVIEWER_PROCPLAN_PASSWORD: ${{ secrets.REVIEWER_PROCPLAN_PASSWORD }}
 
       # 👇 STEP 1 - Set environment info for Allure
+      # To use real URL later, replace Base_URL value with: ${{ secrets.BASE_URL }}
       - name: Set Allure Environment Info
         run: |
           mkdir -p allure-results
           cat > allure-results/environment.properties << EOF
-          Application=eProcureMIND
-          Environment=Production
+          Application=Procsi
+          Environment=QA
           Browser=Chromium
-          Base_URL=${{ secrets.BASE_URL }}
+          Base_URL=https://app.procsi.id
           EOF
         if: always()
 
