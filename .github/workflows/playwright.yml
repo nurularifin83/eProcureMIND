@@ -88,11 +88,12 @@ jobs:
 
       # 👇 STEP 2 - Download previous history for Trend chart
       - name: Download Previous Allure History
-        uses: actions/download-artifact@v4
+        uses: dawidd6/action-download-artifact@v6
         with:
           name: allure-history
           path: allure-results/history
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          workflow: playwright.yml
+          if_no_artifact_found: warn
         continue-on-error: true
 
       - name: Install Allure CLI
