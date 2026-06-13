@@ -38,7 +38,7 @@ export class LoginPage extends BasePage {
       page.getByText('* The password field is required.');
 
     this.captchaRequiredMessage = 
-      page.getByText('Please verify that you are not a robot...');
+      page.getByText('Please verify that you are not a robot.');
   }
 
   async goto() {
