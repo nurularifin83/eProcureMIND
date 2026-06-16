@@ -56,7 +56,7 @@ export class LoginPage extends BasePage {
     await this.loginButton.click();
   }
 
-  // Verify wanted responses
+  // Verify wanted responsesx
   async verifyLoginFailed() {
     await expect(this.loginFailedMessage).toBeVisible();
   }
