@@ -1,6 +1,6 @@
 import { test } from '@playwright/test';
-import { LoginPage } from '../../pages/common/LoginPage';
-import { users } from '../../fixtures/users';
+import { LoginPage } from "../../../pages/common/LoginPage"
+import { users } from '../../../fixtures/users';
 
 test('Login with invalid password', async ({ page }) => {
 
