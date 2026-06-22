@@ -1,5 +1,6 @@
 import { faker } from '@faker-js/faker';
 
+// Register data
 export function generateVendorData() {
   return {
     domestic: {
@@ -37,5 +38,45 @@ export function generateVendorData() {
       picPhone: '+1' + faker.string.numeric(10),
       picIdNumber: 'P' + faker.string.numeric(9),
     }
+  };
+}
+
+// 👇 New generator for Company Profile completion flow
+export function generateCompanyProfileData() {
+  return {
+    companyIdentity: {
+      typeofCapital: 'FDI - Penanaman Modal Asing / Foreign Direct Investment',
+      institutionType: 'NON',
+      directorName: faker.person.fullName(),
+      // companyEmail: faker.internet.email(),
+      companyEmail: 'mindidjak@rapikicks.id',
+      qualification: 'Small Business, Small Cooperative',
+    },
+    companyAddress: {
+      address: faker.location.streetAddress(),
+      province: 'DKI Jakarta Jakarta',
+      city: 'Kota Adm. Jakarta Pusat',
+      postalCode: faker.location.zipCode('#####'),
+      phoneNumber: '62' + faker.string.numeric(10),
+      handphoneNumber: '62' + faker.string.numeric(10),
+    },
+    boardMembers: [
+      {
+        handphoneNumber: '62' + faker.string.numeric(9),
+        npwp: faker.string.numeric(16),
+        position: faker.person.jobTitle(),
+        email: faker.internet.email(),
+        identityFilePath: 'fixtures/files/identity-file-1.pdf',
+        npwpFilePath: 'fixtures/files/npwp-file-1.pdf',
+      },
+      {
+        handphoneNumber: '62' + faker.string.numeric(9),
+        npwp: faker.string.numeric(16),
+        position: faker.person.jobTitle(),
+        email: faker.internet.email(),
+        identityFilePath: 'fixtures/files/identity-file-2.pdf',
+        npwpFilePath: 'fixtures/files/npwp-file-2.pdf',
+      }
+    ]
   };
 }

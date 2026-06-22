@@ -2,22 +2,22 @@ import { test } from '@playwright/test';
 import { LoginPage } from '../../pages/common/LoginPage';
 import { users } from '../../fixtures/users';
 
-test('Authenticate Admin', async ({ page }) => {
+test('Authenticate Vendor', async ({ page }) => {
 
   const loginPage = new LoginPage(page);
 
   await loginPage.goto();
 
   await loginPage.login(
-    users.admin.username,
-    users.admin.password
+    users.vendor.username,
+    users.vendor.password
   );
 
   await page.waitForURL('**/beranda**');
   await page.waitForTimeout(1000);
 
   await page.context().storageState({
-    path: 'auth/admin.json'
+    path: 'auth/vendor.json'
   });
 
 });

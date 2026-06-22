@@ -56,6 +56,14 @@ export default defineConfig({
         },
         dependencies: ['setup'],
     },
+    {
+      name: 'vendor',
+      use: {
+        ...devices['Desktop Chrome'],
+        storageState: 'auth/vendor.json',
+      },
+      dependencies: ['vendor-setup'],
+    },
 
     // {
     //   name: 'firefox',                
@@ -78,6 +86,10 @@ export default defineConfig({
     {
       name: 'setup',
       testMatch: /auth\.setup\.ts/,
+    },
+    {
+      name: 'vendor-setup',
+      testMatch: /vendor\.auth\.setup\.ts/,
     }
 
     /* Test against mobile viewports. */

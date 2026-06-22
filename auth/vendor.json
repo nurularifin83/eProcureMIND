@@ -1,0 +1,49 @@
+{
+  "cookies": [
+    {
+      "name": "procsi_mind_id_development_session",
+      "value": "eyJpdiI6InF5bG9tWDJOUHA3Y1FZSGhvdnpjbFE9PSIsInZhbHVlIjoiVGgzZ3lqUyt5UHpYcndGNUIzTjR1V0l4OGNYWHNZcFRSdXVqZk5icTczT1dMQzdXcFdpeW5xWHdEbStOckFaRGhmbStobE1ScEIvQmVWdlJMdENzbllGaStib3ppN0RBK1Zxc2JKdnk4eHlpKzNseGpIcGh3aGNRZXlwZmMzR1MiLCJtYWMiOiJhOTMyODRmNWFkNjQ3Yzg4YTZjYTM4YTc0OGE3ZGZhNmZjZGE0MzI2MmIzZGM1M2UzYjU4Nzg5ZGU0Y2ZkM2EzIiwidGFnIjoiIn0%3D",
+      "domain": "procsi-mind-id.ptsisi.id",
+      "path": "/",
+      "expires": 1782143018.977547,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://procsi-mind-id.ptsisi.id",
+      "localStorage": [
+        {
+          "name": "active_position_context_id",
+          "value": "null"
+        },
+        {
+          "name": "i18nextLng",
+          "value": "en"
+        },
+        {
+          "name": "token",
+          "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vcHJvY3NpLW1pbmQtaWQucHRzaXNpLmlkL2FwaS9sb2dpbiIsImlhdCI6MTc4MjEzNTgxOSwiZXhwIjoxNzgyMTQzMDE5LCJuYmYiOjE3ODIxMzU4MTksImp0aSI6Ik1hOVZMREVGcVBoWFB3ZHEiLCJzdWIiOiIxOTMxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.ZskE0GePsNnVMHHMmN3WWV6FEiD5NGO_plnqYqA7NU8"
+        },
+        {
+          "name": "position_contexts",
+          "value": "[]"
+        },
+        {
+          "name": "times",
+          "value": "2026-06-22 20:43:39"
+        },
+        {
+          "name": "access-control",
+          "value": "U2FsdGVkX1/HbLmtu82MSaKa9uP+3SIIdUNb9OmuDOg="
+        },
+        {
+          "name": "persist:root",
+          "value": "{\"auth\":\"{\\\"user\\\":{\\\"status\\\":\\\"success\\\",\\\"message\\\":\\\"User successfully login.\\\",\\\"data\\\":{\\\"id\\\":1931,\\\"uuid\\\":\\\"1ca6cd03-38d2-493f-9e72-1ee3697aa100\\\",\\\"name\\\":\\\"PROSACCO GROUP\\\",\\\"username\\\":\\\"00001186\\\",\\\"email\\\":\\\"mindidjak@rapikicks.id\\\",\\\"is_developer\\\":\\\"n\\\",\\\"status\\\":\\\"y\\\",\\\"created_by\\\":null,\\\"updated_by\\\":null,\\\"created_at\\\":\\\"2026-06-21T13:32:10.000000Z\\\",\\\"updated_at\\\":\\\"2026-06-21T13:32:52.000000Z\\\",\\\"verification_at\\\":\\\"2026-06-21 20:32:52\\\",\\\"purchasing_org_id\\\":null,\\\"work_unit_id\\\":null,\\\"general_planner_id\\\":null,\\\"specific_planner_id\\\":null,\\\"company_id\\\":\\\"1000\\\",\\\"division_id\\\":null,\\\"evaluator_id\\\":null,\\\"jabatan\\\":null,\\\"file_ttd\\\":null,\\\"atasan_uuid\\\":null,\\\"ad_id\\\":null,\\\"departement_id\\\":null,\\\"director_id\\\":null,\\\"sort_key\\\":null,\\\"salesperson\\\":null,\\\"gr_based_inv_verification\\\":null,\\\"srv_based_inv_verification\\\":null,\\\"check_in_double_invoice\\\":null,\\\"title\\\":null,\\\"recc_account\\\":null,\\\"planning_group\\\":null,\\\"payment_terms\\\":null,\\\"bank_keys\\\":null,\\\"grouping\\\":null,\\\"nik\\\":null,\\\"roles\\\":[{\\\"id\\\":3,\\\"uuid\\\":\\\"c1a56358-09aa-45b2-89d9-a9998af1e382\\\",\\\"name\\\":\\\"Vendor\\\",\\\"guard_name\\\":\\\"api\\\",\\\"status\\\":\\\"y\\\",\\\"created_by\\\":null,\\\"updated_by\\\":null,\\\"created_at\\\":null,\\\"updated_at\\\":null,\\\"code\\\":\\\"VNDR01\\\",\\\"id_atasan\\\":null,\\\"ad_id\\\":null,\\\"pivot\\\":{\\\"model_id\\\":1931,\\\"role_id\\\":3}}],\\\"has_roles\\\":[\\\"VNDR01\\\"],\\\"timestamp\\\":\\\"2026-06-22 20:43:39\\\",\\\"position_contexts\\\":[],\\\"active_position_context_id\\\":null,\\\"division_name\\\":null}},\\\"token\\\":\\\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vcHJvY3NpLW1pbmQtaWQucHRzaXNpLmlkL2FwaS9sb2dpbiIsImlhdCI6MTc4MjEzNTgxOSwiZXhwIjoxNzgyMTQzMDE5LCJuYmYiOjE3ODIxMzU4MTksImp0aSI6Ik1hOVZMREVGcVBoWFB3ZHEiLCJzdWIiOiIxOTMxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.ZskE0GePsNnVMHHMmN3WWV6FEiD5NGO_plnqYqA7NU8\\\",\\\"access\\\":\\\"OK\\\",\\\"invoice_popup\\\":true}\",\"toastr\":\"{\\\"toastrs\\\":[],\\\"confirm\\\":null}\",\"sidebarDt\":\"{\\\"sidebar\\\":[{\\\"id\\\":5,\\\"title\\\":\\\"Vendor Management\\\",\\\"description\\\":\\\"\\\",\\\"path\\\":\\\"/vendor\\\",\\\"parent_id\\\":0,\\\"order_no\\\":12,\\\"icon\\\":\\\"fa fa-home\\\",\\\"status\\\":\\\"y\\\",\\\"permission_id\\\":null,\\\"permission_name\\\":null,\\\"feature_id\\\":null,\\\"action_id\\\":null,\\\"access\\\":[\\\"\\\"],\\\"children\\\":[{\\\"id\\\":86,\\\"title\\\":\\\"Task Vendor\\\",\\\"description\\\":\\\"\\\",\\\"path\\\":\\\"/task-vendor\\\",\\\"parent_id\\\":5,\\\"order_no\\\":1,\\\"icon\\\":\\\"fas fa-book\\\",\\\"status\\\":\\\"y\\\",\\\"permission_id\\\":75,\\\"permission_name\\\":\\\"Read Vendor\\\",\\\"feature_id\\\":\\\"FM-VND\\\",\\\"action_id\\\":\\\"RE\\\",\\\"access\\\":[\\\"CR\\\",\\\"UP\\\",\\\"RE\\\"]},{\\\"id\\\":6,\\\"title\\\":\\\"Profile Vendor\\\",\\\"description\\\":\\\"\\\",\\\"path\\\":\\\"/vendor/profile\\\",\\\"parent_id\\\":5,\\\"order_no\\\":2,\\\"icon\\\":\\\"fas fa-user\\\",\\\"status\\\":\\\"y\\\",\\\"permission_id\\\":75,\\\"permission_name\\\":\\\"Read Vendor\\\",\\\"feature_id\\\":\\\"FM-VND\\\",\\\"action_id\\\":\\\"RE\\\",\\\"access\\\":[\\\"CR\\\",\\\"UP\\\",\\\"RE\\\"]}],\\\"exact\\\":true}],\\\"location\\\":{\\\"pathname\\\":\\\"/task-vendor\\\",\\\"search\\\":\\\"\\\",\\\"hash\\\":\\\"\\\",\\\"key\\\":\\\"63rxya\\\"},\\\"parent_access\\\":{\\\"C\\\":false,\\\"R\\\":false,\\\"U\\\":false,\\\"D\\\":false,\\\"A\\\":false},\\\"access\\\":{\\\"C\\\":true,\\\"R\\\":true,\\\"U\\\":true,\\\"D\\\":false,\\\"A\\\":false}}\",\"notifications\":\"{\\\"data\\\":null}\",\"temporary\":\"{\\\"selected_items_pr\\\":[]}\",\"praQualification\":\"{\\\"tender_uuid\\\":null}\",\"tenderStatus\":\"{}\",\"invoiceStatus\":\"{}\",\"chat\":\"{\\\"unreadMsgVendor\\\":null,\\\"unreadMsgBuyer\\\":null,\\\"history_chat\\\":[]}\",\"typing\":\"{\\\"typing\\\":null}\",\"mappingIndexWorkflowApproval\":\"{\\\"status\\\":false,\\\"message\\\":\\\"\\\",\\\"error\\\":false,\\\"data\\\":[],\\\"meta\\\":{},\\\"loading\\\":false}\",\"_persist\":\"{\\\"version\\\":-1,\\\"rehydrated\\\":true}\"}"
+        }
+      ]
+    }
+  ]
+}
