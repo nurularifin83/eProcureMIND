@@ -77,6 +77,22 @@ export function generateCompanyProfileData() {
         identityFilePath: 'fixtures/files/identity-file-2.pdf',
         npwpFilePath: 'fixtures/files/npwp-file-2.pdf',
       }
-    ]
+    ],
+    pic: [
+      {
+        position: faker.person.jobTitle(),
+        powerOfAttorneyFilePath: 'fixtures/files/power-of-attorney-1.pdf',
+      }
+    ],
+    companyDeed: {
+      deedNumber: faker.string.numeric(6),
+      deedType: 'Akta Pendirian (Deed of Establishment)',
+      deedDate: new Date().toISOString().split('T')[0],
+      notarisName: faker.person.fullName(),
+      skKemenkumhamNumber: 'AHU-' + faker.string.numeric(8) + '.AH.01.02.TAHUN' + new Date().getFullYear(),
+      skKemenkumhamDate: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+      skKemenkumhamFilePath: 'fixtures/files/sk-kemenkumham-file.pdf',
+      deedFilePath: 'fixtures/files/deed-file.pdf',
+    }
   };
 }

@@ -10,10 +10,13 @@ export class VMSProfilePage extends BasePage {
   readonly panel1: Locator;
   readonly panel2: Locator;
   readonly panel5: Locator;
+  readonly panel6: Locator;
 
   // ── Panel 5: Board of Directors ──────────────
   readonly panel5Header: Locator;
   readonly panel5EditButtons: Locator;
+  readonly panel6Header: Locator;
+  readonly panel6EditButtons: Locator;
 
   // ── Panel 1: Company Identity ────────────────
   readonly typeofCapitalDropdown: Locator;
@@ -47,6 +50,17 @@ export class VMSProfilePage extends BasePage {
   readonly p5NpwpFileInput: Locator;
   readonly panel5SaveButton: Locator;
   readonly panel5Status: Locator;
+
+  // Panel 6 Form Fields
+  readonly p6NameInput: Locator;
+  readonly p6IdentityNumberInput: Locator;
+  readonly p6PhoneNumberInput: Locator;
+  readonly p6EmailInput: Locator;
+  readonly p6PositionInput: Locator;
+  readonly p6MainPicDropdown: Locator;
+  readonly p6PowerOfAttorneyFileInput: Locator;
+  readonly panel6SaveButton: Locator;
+  readonly panel6Status: Locator;
 
   // ── SweetAlert2 Confirmation ──────────────────
   readonly confirmationSaveButton: Locator;
@@ -157,6 +171,43 @@ export class VMSProfilePage extends BasePage {
 
     this.panel5Status =
       this.panel5.locator('[data-status-label]');
+
+    // ── Panel 6 ────────────────────────────────
+    this.panel6 =
+      page.locator('.card').filter({ hasText: '6. PIC' });
+
+    this.panel6Header =
+      this.panel6.locator('.card-header');
+
+    this.panel6EditButtons =
+      this.panel6.locator('.btn-warning');
+
+    this.p6NameInput =
+      this.panel6.locator('input[name="pic_name"]');
+
+    this.p6IdentityNumberInput =
+      this.panel6.locator('input[name="pic_ktp_no"]');
+
+    this.p6PhoneNumberInput =
+      this.panel6.locator('input[name="pic_phone_no"]');
+
+    this.p6EmailInput =
+      this.panel6.locator('input[name="pic_email"]');
+
+    this.p6PositionInput =
+      this.panel6.locator('input[name="pic_jabatan"]');
+
+    this.p6MainPicDropdown =
+      this.panel6.locator('.form-group').filter({ hasText: 'Main PIC' }).locator('.basic-single-select');
+
+    this.p6PowerOfAttorneyFileInput =
+      this.panel6.locator('input.filepond--browser[name="pic_surat_kuasa_file"]');
+
+    this.panel6SaveButton =
+      this.panel6.locator('.procsi-new-actions .btn-danger');
+
+    this.panel6Status =
+      this.panel6.locator('[data-status-label]');
 
     // ── SweetAlert2 Confirmation ───────────────
     this.confirmationSaveButton = 
@@ -322,5 +373,43 @@ export class VMSProfilePage extends BasePage {
 
   async verifyPanel5Saved() {
     await expect(this.panel5Status).toHaveAttribute('data-status-label', 'Submit Registration');
+  }
+
+  // ════════════════════════════════════════════
+  // PANEL 6: PIC
+  // ════════════════════════════════════════════
+  async expandPanel6() {
+    const isCollapsed = await this.panel6.locator('.collapse.show').count() === 0;
+    if (isCollapsed) {
+      await this.panel6Header.click();
+    }
+    await this.p6NameInput.waitFor({ state: 'visible' });
+  }
+
+  async editPIC(rowIndex: number, data: {
+    position: string;
+    powerOfAttorneyFilePath: string;
+  }) {
+    await this.expandPanel6();
+    await this.panel6EditButtons.nth(rowIndex).click();
+    await this.p6NameInput.waitFor({ state: 'visible' });
+
+    // Only fill missing mandatory fields
+    await this.p6PositionInput.fill(data.position);
+
+    // Upload Power of Attorney file if not already uploaded
+    await this.uploadFileIfEmpty(
+      this.p6PowerOfAttorneyFileInput,
+      data.powerOfAttorneyFilePath,
+      this.panel6.locator('.form-group').filter({ hasText: 'Power of Attorney' })
+    );
+  }
+
+  async savePanel6() {
+    await this.panel6SaveButton.click();
+  }
+
+  async verifyPanel6Saved() {
+    await expect(this.panel6Status).toHaveAttribute('data-status-label', 'Submit Registration');
   }
 }

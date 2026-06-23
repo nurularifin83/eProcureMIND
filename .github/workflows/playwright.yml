@@ -43,6 +43,8 @@ jobs:
           BASE_URL: ${{ secrets.BASE_URL }}
           ADMIN_USERNAME: ${{ secrets.ADMIN_USERNAME }}
           ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+          VENDOR_USERNAME: ${{ secrets.VENDOR_USERNAME }}
+          VENDOR_PASSWORD: ${{ secrets.VENDOR_PASSWORD }}
           HSE_USERNAME: ${{ secrets.HSE_USERNAME }}
           HSE_PASSWORD: ${{ secrets.HSE_PASSWORD }}
           ADMIN_SCM_USERNAME: ${{ secrets.ADMIN_SCM_USERNAME }}
